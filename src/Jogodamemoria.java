@@ -3,17 +3,16 @@ import java.util.Scanner;
 
 public class Jogodamemoria extends JFrame {
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
 
-
-
-        System.out.println("===== Manga Rosa Memory Gam =====");
+        System.out.println("===== Manga Rosa Memory Game =====");
 
         while (true) {
             System.out.println("1.Iniciar");
             System.out.println("2.Pontuação Participantes");
             System.out.println("3.Regras do jogo");
-            System.out.println("4.Sair \n");
+            System.out.println("4.Sair");
             System.out.println("Digite sua opção: ");
 
             int comand = sc.nextInt();
@@ -22,7 +21,8 @@ public class Jogodamemoria extends JFrame {
             switch (comand) {
                 case 1:
                     Configuraçoes.mostrarConfiguraçoes();
-
+                    tabuleiro.mostrartabuleiro();
+                    break;
                 case 2:
                     System.out.println("Pontuações ainda não implementadas...");
                     break;
