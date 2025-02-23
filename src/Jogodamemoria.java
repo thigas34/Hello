@@ -13,7 +13,7 @@ public class Jogodamemoria extends JFrame {
             System.out.println("2.Pontuação Participantes");
             System.out.println("3.Regras do jogo");
             System.out.println("4.Sair");
-            System.out.println("Digite sua opção: ");
+            System.out.print("Digite sua opção: ");
 
             int comand = sc.nextInt();
             sc.nextLine(); // Consome a quebra de linha
@@ -21,7 +21,7 @@ public class Jogodamemoria extends JFrame {
             switch (comand) {
                 case 1:
                     Configuraçoes.mostrarConfiguraçoes();
-                    tabuleiro.mostrartabuleiro();
+                    Jogo.jogo();
                     break;
                 case 2:
                     System.out.println("Pontuações ainda não implementadas...");
