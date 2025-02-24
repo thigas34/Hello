@@ -21,7 +21,7 @@ public class Jogodamemoria extends JFrame {
             switch (comand) {
                 case 1:
                     Configuraçoes.mostrarConfiguraçoes();
-                    Jogo.jogo();
+                    Respostas.jogo();
                     break;
                 case 2:
                     System.out.println("Pontuações ainda não implementadas...");

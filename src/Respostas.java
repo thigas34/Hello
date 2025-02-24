@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Jogo {
+public class Respostas {
 
     public static int userLinha;
     public static int userColuna;

@@ -5,8 +5,8 @@ public class Tabuleiro {
     public static String reset = "\u001b[0m";
 
     public static void mostrartabuleiro() {
-        boolean resposta2Valida = Jogo.resposta2 != null && Jogo.resposta2.size() >= 2;
-        boolean resposta1Valida = Jogo.resposta1 != null && Jogo.resposta1.size() >= 2;
+        boolean resposta2Valida = Respostas.resposta2 != null && Respostas.resposta2.size() >= 2;
+        boolean resposta1Valida = Respostas.resposta1 != null && Respostas.resposta1.size() >= 2;
 
         String azul = "\u001b[44m";
         String preto = "\u001b[40m";
@@ -41,10 +41,10 @@ public class Tabuleiro {
                 }
 
                 if (resposta1Valida) { // Pinta os espaços que o jogador pedir
-                    if (Jogo.resposta1.get(0) == linha && Jogo.resposta1.get(1) == (coluna + 1)) {
+                    if (Respostas.resposta1.get(0) == linha && Respostas.resposta1.get(1) == (coluna + 1)) {
                         PrintCor.printCor(corAleatoria);
-                    } else if (resposta2Valida && Jogo.resposta2.get(0) == linha
-                            && Jogo.resposta2.get(1) == (coluna + 1)) {
+                    } else if (resposta2Valida && Respostas.resposta2.get(0) == linha
+                            && Respostas.resposta2.get(1) == (coluna + 1)) {
                         PrintCor.printCor(corAleatoria);
                     } else {
                         PrintCor.printCor(branco);
