@@ -1,9 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Respostas {
-
     public static int userLinha;
     public static int userColuna;
     public static List<Integer> resposta1 = new ArrayList<>();
