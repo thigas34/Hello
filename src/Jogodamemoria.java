@@ -16,11 +16,11 @@ public class Jogodamemoria extends JFrame {
             System.out.print("Digite sua opção: ");
 
             int comand = sc.nextInt();
-            sc.nextLine(); // Consome a quebra de linha
+            sc.nextLine(); 
 
             switch (comand) {
                 case 1:
-                    Configuraçoes.mostrarConfiguraçoes();
+                    Configuracoes.mostrarConfiguraçoes();
                     Respostas.jogo();
                     break;
                 case 2:
